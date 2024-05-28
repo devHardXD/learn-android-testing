@@ -5,6 +5,11 @@ plugins {
 android {
     namespace = "com.example.testingdebugginge"
     compileSdk = 34
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
 
     defaultConfig {
         applicationId = "com.example.testingdebugginge"
@@ -42,4 +47,5 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     testImplementation("androidx.test.espresso:espresso-core:3.4.0")
     testImplementation("org.mockito:mockito-core:3.11.2")
+    testImplementation ("org.robolectric:robolectric:4.12.2")
 }
