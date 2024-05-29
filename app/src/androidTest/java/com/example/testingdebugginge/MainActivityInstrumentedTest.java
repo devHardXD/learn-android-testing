@@ -27,6 +27,6 @@ public class MainActivityInstrumentedTest {
     public void testGoToSecondActivityButton() {
         // Click on the goToSecondActivityButton
         onView(withId(R.id.secondActivityButton)).perform(click());
-
+        onView(withId(R.id.hasil)).check(matches(withText("Hasil")));
     }
 }
